@@ -5,6 +5,7 @@
  * Author: Vitamin
  * Author URI: https://vitaminisgood.com
  * Version: 1.0.0
+ * GitHub Plugin URI: vitamin-dev/vitamin-mailblast-cf7
  *
  * @package Vitamin\Plugins\MailBlastCf7
  * @author Vitamin
