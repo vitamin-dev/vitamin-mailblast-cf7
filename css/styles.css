@@ -1,0 +1,64 @@
+.mailblast label {
+	display: block;
+}
+
+.mailblast [type='text'],
+.mailblast [type='email'],
+.mailblast [type='date'],
+.mailblast [type='password'],
+.mailblast [type='number'],
+.mailblast textarea,
+.mailblast select {
+	display: block;
+	width: 100%;
+}
+
+.mailblast .wpcf7-mb-tag {
+	display: inline-block;
+	padding: 0;
+	border: 0;
+	background: none;
+	outline: 0;
+	height: 1.2em;
+	font: inherit;
+	font-size: .875em;
+	margin: 5px;
+	pointer-events: all;
+}
+
+.mailblast .mb-cf-list-template {
+	display: none;
+}
+
+.mailblast .mb-cf-list table {
+	width: 100%;
+}
+
+.mailblast .mb-cf-list th:last-child,
+.mailblast .mb-cf-list td:last-child {
+	width: 1em;
+}
+
+.mailblast .mb-cf-list button {
+	font-size: 0;
+	padding: 0 5px;
+}
+
+.mailblast .mb-cf-list button::before {
+	content: '\00d7';
+	font-size: 1.25rem;
+	display: inline-block;
+	margin: -1px 0 1px;
+}
+
+.mailblast li {
+	margin-bottom: 12px;
+}
+
+.mb-custom-fields {
+	display: none;
+}
+
+.mailblast .second-list {
+	display: none;
+}
