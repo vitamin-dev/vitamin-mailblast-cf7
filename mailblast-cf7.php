@@ -4,7 +4,7 @@
  * Description: Use CF7 forms to add subscribers to MailBlast
  * Author: Vitamin
  * Author URI: https://vitaminisgood.com
- * Version: 1.0.2
+ * Version: 1.0.0
  * GitHub Plugin URI: vitamin-dev/vitamin-mailblast-cf7
  *
  * @package Vitamin\Plugins\MailBlastCf7
