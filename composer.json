@@ -1,5 +1,5 @@
 {
     "require": {
-        "campaignmonitor/createsend-php": "^6.1"
+        "campaignmonitor/createsend-php": "^7.0"
     }
 }

@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b00dd1976e78ab99629f532b045d2ffc",
+    "content-hash": "30dde713035a578f30fce9ed67109020",
     "packages": [
         {
             "name": "campaignmonitor/createsend-php",
-            "version": "v6.1.1",
+            "version": "v7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/campaignmonitor/createsend-php.git",
-                "reference": "12a4c1f33b940775bde80ae1494036df06ed36d4"
+                "reference": "3ac6d4d2721f6529a2cae2515f7e88a17baa7d19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/campaignmonitor/createsend-php/zipball/12a4c1f33b940775bde80ae1494036df06ed36d4",
-                "reference": "12a4c1f33b940775bde80ae1494036df06ed36d4",
+                "url": "https://api.github.com/repos/campaignmonitor/createsend-php/zipball/3ac6d4d2721f6529a2cae2515f7e88a17baa7d19",
+                "reference": "3ac6d4d2721f6529a2cae2515f7e88a17baa7d19",
                 "shasum": ""
             },
             "require": {
@@ -66,9 +66,9 @@
             ],
             "support": {
                 "issues": "https://github.com/campaignmonitor/createsend-php/issues",
-                "source": "https://github.com/campaignmonitor/createsend-php/tree/master"
+                "source": "https://github.com/campaignmonitor/createsend-php/tree/v7.0.0"
             },
-            "time": "2020-05-06T02:33:22+00:00"
+            "time": "2022-02-11T00:01:29+00:00"
         }
     ],
     "packages-dev": [],
