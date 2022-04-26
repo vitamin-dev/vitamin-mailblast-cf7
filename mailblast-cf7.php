@@ -4,7 +4,7 @@
  * Description: Use CF7 forms to add subscribers to MailBlast
  * Author: Vitamin
  * Author URI: https://vitaminisgood.com
- * Version: 1.0.0
+ * Version: 1.1.0
  * GitHub Plugin URI: vitamin-dev/vitamin-mailblast-cf7
  *
  * @package Vitamin\Plugins\MailBlastCf7
@@ -91,10 +91,22 @@ function send_to_mailblast( $wpcf, $abort, $submission ) {
 		if ( $use_cf && count( $cf ) ) {
 			$subscription['CustomFields'] = [];
 			foreach ( $cf as $field ) {
-				$subscription['CustomFields'][] = [
-					'Key'   => $field[0],
-					'Value' => mb_replace_cf7_tags( $field[1], $posted_data ),
-				];
+				$field_value = mb_replace_cf7_tags( $field[1], $posted_data );
+				if ( '_m' === substr( $field[0], -2 ) ) {
+					$field_name   = substr( $field[0], 0, -2 );
+					$field_values = array_map( fn( $v ) => trim( $v ), explode( ',', $field_value ) );
+					foreach ( $field_values as $v ) {
+						$subscription['CustomFields'][] = [
+							'Key'   => $field_name,
+							'Value' => $v,
+						];
+					}
+				} else {
+					$subscription['CustomFields'][] = [
+						'Key'   => $field[0],
+						'Value' => $field_value,
+					];
+				}
 			}
 		}
 
@@ -116,10 +128,22 @@ function send_to_mailblast( $wpcf, $abort, $submission ) {
 				if ( $use_cf_2 && count( $cf2 ) ) {
 					$subscription['CustomFields'] = [];
 					foreach ( $cf2 as $field ) {
-						$subscription['CustomFields'][] = [
-							'Key'   => $field[0],
-							'Value' => mb_replace_cf7_tags( $field[1], $posted_data ),
-						];
+						$field_value = mb_replace_cf7_tags( $field[1], $posted_data );
+						if ( '_m' === substr( $field[0], -2 ) ) {
+							$field_name   = substr( $field[0], 0, -2 );
+							$field_values = array_map( fn( $v ) => trim( $v ), explode( ',', $field_value ) );
+							foreach ( $field_values as $v ) {
+								$subscription['CustomFields'][] = [
+									'Key'   => $field_name,
+									'Value' => $v,
+								];
+							}
+						} else {
+							$subscription['CustomFields'][] = [
+								'Key'   => $field[0],
+								'Value' => $field_value,
+							];
+						}
 					}
 				}
 

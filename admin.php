@@ -4,7 +4,7 @@
  *
  * @package Vitamin\Plugins\MailBlastCf7
  * @author Vitamin
- * @version 1.0.0
+ * @version 1.1.0
  */
 
 /**
@@ -162,6 +162,7 @@ function mailblast_cf7_settings() {
 			</li>
 			<?php } ?>
 		</ul>
+		<p><small>For custom fields that accept multiple values, append the field name with <code>_m</code>. The value will automatically split on <code>,</code>.</small></p>
 		<button type="button" class="mb-cf-add">Add Field</button>
 		</li>
 		<li>
@@ -252,6 +253,7 @@ function mailblast_cf7_settings() {
 				</li>
 				<?php } ?>
 			</ul>
+			<p><small>For custom fields that accept multiple values, append the field name with <code>_m</code>. The value will automatically split on <code>,</code>.</small></p>
 			<button type="button" class="mb-cf-add">Add Field</button>
 			</li>
 		</ul>
