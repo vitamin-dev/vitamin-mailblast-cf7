@@ -20,7 +20,7 @@
 		});
 
 		$('.mb-cf-add').click(function(){
-			var list = $(this).prev('.mb-cf-list');
+			var list = $(this).prevAll('.mb-cf-list');
 			var template = list.find('.mb-cf-list-template');
 			template.clone().removeClass('mb-cf-list-template').appendTo(list);
 		});
